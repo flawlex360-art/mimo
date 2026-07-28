@@ -537,9 +537,9 @@ footer {
     transform: translateY(30px);
     filter: blur(2px);
     will-change: opacity, transform, filter;
-    transition: opacity 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-                transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-                filter 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: opacity 2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                transform 2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                filter 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .reveal.revealed {
@@ -554,9 +554,9 @@ footer {
     transform: translateY(20px);
     filter: blur(1px);
     will-change: opacity, transform, filter;
-    transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-                transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-                filter 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: opacity 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                transform 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                filter 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .projects-grid .project-card.revealed {

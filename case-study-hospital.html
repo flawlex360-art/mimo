@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Elisha Hospital Management System — Flawlex Technologies</title>
+    <link rel="icon" type="image/png" href="assets/images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+            <img src="assets/images/icon.png" alt="Flawlex" class="nav-logo-img">
+            <span>Flawlex</span>
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="portfolio.html" class="nav-link active">Portfolio</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="stem.html" class="nav-link">STEM</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <main class="page-content">
+        <section class="case-study-hero">
+            <div class="case-study-hero-bg">
+                <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=1200" alt="St. Elisha Hospital Management System">
+                <div class="case-study-hero-overlay"></div>
+            </div>
+            <div class="container">
+                <a href="portfolio.html" class="back-link">← Back to Portfolio</a>
+                <h1>St. Elisha Hospital Management System</h1>
+                <div class="case-study-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Industry</span>
+                        <span class="meta-value">Healthcare</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Duration</span>
+                        <span class="meta-value">4 months</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Category</span>
+                        <span class="meta-value">Software</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-study-content">
+            <div class="container container-narrow">
+                <div class="case-study-section reveal">
+                    <h2>The Challenge</h2>
+                    <p>The hospital required a secure, real-time platform to handle sensitive patient data while providing staff with instantaneous communication channels that functioned as reliably as consumer apps like WhatsApp.</p>
+                </div>
+
+                <div class="case-study-section reveal">
+                    <h2>Our Solution</h2>
+                    <p>Engineered a robust backend using NestJS, Prisma, and PostgreSQL, coupled with a Next.js frontend. Implemented real-time WebSockets via Socket.io for a seamless chat experience, along with advanced JWT and 2FA (QR code) security protocols.</p>
+                </div>
+
+                <div class="case-study-section reveal">
+                    <h2>Ecosystem Features</h2>
+                    <div class="feature-card">
+                        <h3>Digital Patient Triage & Doctor Referrals</h3>
+                        <p>A completely paperless workflow. Nurses can record a patient's vitals, symptoms, and initial data directly into the portal upon arrival. With a single click, the patient's digital file is seamlessly routed and referred to a specific doctor's active queue, notifying the doctor instantly.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Instant Staff Communication</h3>
+                        <p>An internal messaging system that works exactly like WhatsApp. Doctors, nurses, and administrators can send instant messages to each other for quick consultations or emergencies without ever leaving the hospital's secure portal.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Industry-Standard Healthcare Security</h3>
+                        <p>Built to pass stringent healthcare data regulations like HIPAA and ISO 27001. Beyond standard passwords, we utilize Two-Factor Authentication (2FA) alongside real-time server monitoring to detect and block malicious bot attacks. Advanced database encryption and continuous remote backups provide guaranteed protection against ransomware and data loss.</p>
+                    </div>
+                </div>
+
+                <div class="case-study-section reveal">
+                    <h2>Results</h2>
+                    <div class="results-list">
+                        <div class="result-item">
+                            <span class="result-icon">✓</span>
+                            <span>Real-time, WhatsApp-style chat system for instantaneous staff communication</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-icon">✓</span>
+                            <span>Enterprise-grade security with JWT and Two-Factor Authentication (2FA)</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-icon">✓</span>
+                            <span>Modern, highly-responsive UI powered by Tailwind CSS v4 and Framer Motion</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-icon">✓</span>
+                            <span>Robust database architecture utilizing Prisma ORM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-section reveal">
+                    <h2>Technologies Used</h2>
+                    <div class="tech-tags">
+                        <span>NestJS</span>
+                        <span>Next.js</span>
+                        <span>Prisma</span>
+                        <span>Socket.io</span>
+                        <span>Tailwind CSS</span>
+                        <span>JWT/2FA</span>
+                    </div>
+                </div>
+
+                <div class="case-study-cta reveal">
+                    <a href="contact.html" class="btn btn--primary">Start a Similar Project</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Flawlex Technologies. All rights reserved.</p>
+                <p>Made with ❤️ in Ghana 🇬🇭</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -260,3 +260,29 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+
+    // ── Lucide Icons Init ──────────────────────────────────────────
+    if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+    }
+
+    // ── Service Card Click Animation ───────────────────────────────
+    document.querySelectorAll('.service-card, .service-card-full, .project-card').forEach(card => {
+        card.style.cursor = 'pointer';
+        card.addEventListener('click', function(e) {
+            // Prevent if clicking a link inside
+            if(e.target.tagName.toLowerCase() === 'a') return;
+            
+            // Remove class if it's already there to retrigger animation
+            this.classList.remove('animate-pop');
+            // Trigger reflow
+            void this.offsetWidth;
+            this.classList.add('animate-pop');
+            
+            // Cleanup class after animation
+            setTimeout(() => {
+                this.classList.remove('animate-pop');
+            }, 400);
+        });
+    });

@@ -1,7 +1,8 @@
 // main.js — Cursor Reveal + Scroll Reveal
 
 document.addEventListener('DOMContentLoaded', () => {
-    const canHover = window.matchMedia('(hover: hover)').matches;
+    const isTouch = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0);
+    const canHover = !isTouch;
     const allHeroes = document.querySelectorAll('.hero');
 
     // ── Cursor Reveal Effect (Desktop & Mobile) ────────────────────

@@ -1883,17 +1883,17 @@ footer {
 /* ── Card Click Animation ───────────────────────────────────── */
 @keyframes popOut {
     0% { transform: scale(1); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-    50% { transform: scale(1.05); box-shadow: 0 15px 30px rgba(0,0,0,0.15); z-index: 10; }
+    50% { transform: scale(1.15) translateY(-8px); box-shadow: 0 30px 60px rgba(0,0,0,0.3); z-index: 10; }
     100% { transform: scale(1); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
 }
 
 .animate-pop {
-    animation: popOut 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    animation: popOut 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }
 
 .service-icon i {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     color: var(--primary-color);
 }
 
@@ -1953,9 +1953,7 @@ footer {
         gap: 1rem;
     }
 
-    .hero-mask {
-        display: none; /* Hide canvas on mobile */
-    }
+    
 
     .page-hero {
         padding: 80px 0 60px;
@@ -2106,13 +2104,4 @@ footer {
     }
 }
 
-/* Hide canvas on touch devices */
-@media (hover: none) {
-    .hero-mask {
-        display: none;
-    }
 
-    .hero::before {
-        display: none;
-    }
-}

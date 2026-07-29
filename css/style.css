@@ -1480,6 +1480,20 @@ img {
 .contact-icon {
     font-size: 24px;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: rgba(38, 37, 30, 0.03);
+    border-radius: 50%;
+}
+
+.contact-icon svg {
+    width: 20px;
+    height: 20px;
+    stroke: #26251e;
+    stroke-width: 2;
 }
 
 .contact-item h4 {

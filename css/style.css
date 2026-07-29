@@ -314,14 +314,18 @@ img {
     font-weight: 400;
     letter-spacing: -0.02em;
     line-height: 1.15;
-    color: #26251e;
+    background: linear-gradient(135deg, #4f5a63, #a2abb3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: #4f5a63; /* Fallback */
 }
 
 .hero-highlight {
     color: inherit;
     -webkit-text-fill-color: transparent;
     position: relative;
-    display: inline-block;
+    display: inline;
 }
 
 .hero-highlight::after {

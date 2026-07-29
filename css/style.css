@@ -1904,6 +1904,84 @@ footer {
     color: var(--primary-color);
 }
 
+
+/* ── Fixed Side Elements (Social & Email) ───────────────────── */
+.side-element {
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 0;
+}
+
+.side-left {
+    left: 40px;
+}
+
+.side-right {
+    right: 40px;
+}
+
+.side-element::after {
+    content: '';
+    width: 1px;
+    height: 90px;
+    background-color: var(--text-color);
+    opacity: 0.2;
+    margin-top: 0.5rem;
+}
+
+.side-social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.side-social-links a {
+    color: var(--text-color);
+    opacity: 0.5;
+    transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.side-social-links a i {
+    width: 20px;
+    height: 20px;
+}
+
+.side-social-links a:hover {
+    opacity: 1;
+    transform: translateY(-4px);
+    color: var(--primary-color);
+}
+
+.side-email {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: var(--text-color);
+    opacity: 0.5;
+    font-size: 13px;
+    letter-spacing: 2.5px;
+    transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.side-email:hover {
+    opacity: 1;
+    transform: translateY(-4px);
+    color: var(--primary-color);
+}
+
+/* Hide on mobile/tablets to prevent overlapping content */
+@media (max-width: 1024px) {
+    .side-element {
+        display: none;
+    }
+}
+
 /* Responsive Design */
 
 /* Tablet */

@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ── Scroll Reveal (Sections) — Bidirectional ─────────────────────
     const revealElements = document.querySelectorAll('.reveal');
-    const projectCards = document.querySelectorAll('.project-card');
+    const projectCards = document.querySelectorAll('.project-card, .service-card, .service-card-full');
 
     function checkVisibility() {
         const windowHeight = window.innerHeight;

@@ -1950,7 +1950,9 @@ footer {
     width: 24px;
     height: 24px;
     display: block;
-    stroke-width: 1.5;
+    stroke: currentColor;
+    stroke-width: 2;
+    background: transparent;
 }
 
 .side-social-links a:hover {

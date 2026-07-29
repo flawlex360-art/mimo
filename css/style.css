@@ -1898,7 +1898,7 @@ footer {
     animation: popOut 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }
 
-.service-icon i {
+.service-icon svg {
     width: 32px;
     height: 32px;
     color: var(--primary-color);
@@ -1946,9 +1946,11 @@ footer {
     transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease;
 }
 
-.side-social-links a i {
-    width: 20px;
-    height: 20px;
+.side-social-links a svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+    stroke-width: 1.5;
 }
 
 .side-social-links a:hover {

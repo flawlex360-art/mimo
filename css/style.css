@@ -314,18 +314,13 @@ img {
     font-weight: 400;
     letter-spacing: -0.02em;
     line-height: 1.15;
-    background: linear-gradient(135deg, #4f5a63, #a2abb3);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: #4f5a63; /* Fallback */
+    color: #26251e;
 }
 
 .hero-highlight {
     color: inherit;
-    -webkit-text-fill-color: transparent;
     position: relative;
-    display: inline;
+    display: inline-block;
 }
 
 .hero-highlight::after {
@@ -335,8 +330,8 @@ img {
     left: -4px;
     right: -4px;
     height: 6px;
-    background: linear-gradient(90deg, #87929c, #d5dde6);
-    box-shadow: 0 0 15px rgba(135, 146, 156, 0.6), 0 0 30px rgba(213, 221, 230, 0.5);
+    background: linear-gradient(90deg, #39ff14, #00ffff);
+    box-shadow: 0 0 15px rgba(57, 255, 20, 0.5), 0 0 30px rgba(0, 255, 255, 0.4);
     z-index: -1;
     border-radius: 4px;
     opacity: 0.8;

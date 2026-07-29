@@ -1946,21 +1946,21 @@ footer {
     margin-top: auto;
 }
 
-.side-social-links {
+.side-nav-icons {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
     z-index: 10000;
 }
 
-.side-social-links a {
+.side-nav-icons a {
     color: #504f49 !important;
     opacity: 0.8 !important;
     transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease;
     display: block;
 }
 
-.side-social-links a svg {
+.side-nav-icons a svg {
     width: 24px;
     height: 24px;
     display: block;
@@ -1969,13 +1969,13 @@ footer {
     background: transparent;
 }
 
-.side-social-links a:hover {
+.side-nav-icons a:hover {
     opacity: 1 !important;
     transform: translateY(-4px);
     color: #26251e !important;
 }
 
-.side-social-links a:hover svg {
+.side-nav-icons a:hover svg {
     stroke: #26251e !important;
 }
 

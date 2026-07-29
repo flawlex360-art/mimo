@@ -2220,8 +2220,11 @@ footer {
 }
 
 .side-nav-icons a {
-    opacity: 0 !important;
+    opacity: 0;
     animation: flyInLeft 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    color: #504f49 !important;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: block;
 }
 
 .side-nav-icons a:nth-child(1) { animation-delay: 0.1s; }
@@ -2235,11 +2238,11 @@ footer {
     transform: translateY(-4px) !important;
 }
 
-.side-nav-icons a svg.lucide-whatsapp {
+.side-nav-icons a svg.lucide-whatsapp, .side-nav-icons a svg.lucide-x {
     stroke: none !important;
     fill: #504f49 !important;
 }
 
-.side-nav-icons a:hover svg.lucide-whatsapp {
+.side-nav-icons a:hover svg.lucide-whatsapp, .side-nav-icons a:hover svg.lucide-x {
     fill: #26251e !important;
 }

@@ -326,13 +326,25 @@ img {
 .hero-highlight::after {
     content: '';
     position: absolute;
-    bottom: 4px;
-    left: 0;
-    right: 0;
-    height: 8px;
-    background: rgba(38, 37, 30, 0.1);
+    bottom: 6px;
+    left: -4px;
+    right: -4px;
+    height: 6px;
+    background: linear-gradient(90deg, #39ff14, #00ffff);
+    box-shadow: 0 0 15px rgba(57, 255, 20, 0.5), 0 0 30px rgba(0, 255, 255, 0.4);
     z-index: -1;
-    border-radius: 2px;
+    border-radius: 4px;
+    opacity: 0.8;
+}
+
+.hero-badge {
+    transition: all 0.3s ease;
+}
+
+.hero-badge:hover {
+    border-color: rgba(57, 255, 20, 0.6);
+    box-shadow: 0 0 15px rgba(57, 255, 20, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
+    transform: translateY(-2px);
 }
 
 .hero-tagline {

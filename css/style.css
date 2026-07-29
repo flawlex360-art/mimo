@@ -2212,3 +2212,34 @@ footer {
 }
 
 
+
+/* Social Icons Animation */
+@keyframes flyInLeft {
+    0% { opacity: 0; transform: translateX(-40px); }
+    100% { opacity: 0.8; transform: translateX(0); }
+}
+
+.side-nav-icons a {
+    opacity: 0 !important;
+    animation: flyInLeft 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.side-nav-icons a:nth-child(1) { animation-delay: 0.1s; }
+.side-nav-icons a:nth-child(2) { animation-delay: 0.2s; }
+.side-nav-icons a:nth-child(3) { animation-delay: 0.3s; }
+.side-nav-icons a:nth-child(4) { animation-delay: 0.4s; }
+.side-nav-icons a:nth-child(5) { animation-delay: 0.5s; }
+
+.side-nav-icons a:hover {
+    opacity: 1 !important;
+    transform: translateY(-4px) !important;
+}
+
+.side-nav-icons a svg.lucide-whatsapp {
+    stroke: none !important;
+    fill: #504f49 !important;
+}
+
+.side-nav-icons a:hover svg.lucide-whatsapp {
+    fill: #26251e !important;
+}

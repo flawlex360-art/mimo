@@ -1918,54 +1918,72 @@ footer {
 }
 
 .side-left {
+    top: 120px;
+    bottom: auto;
     left: 40px;
 }
 
 .side-right {
+    bottom: 0;
     right: 40px;
 }
 
 .side-element::after {
     content: '';
-    width: 1px;
+    width: 2px;
     height: 90px;
     background-color: #504f49;
-    opacity: 0.2;
+    opacity: 0.4;
     margin-top: 0.5rem;
+}
+
+.side-left::after {
+    margin-top: 0.5rem;
+    margin-bottom: auto;
+}
+
+.side-right::after {
+    margin-top: auto;
 }
 
 .side-social-links {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+    z-index: 10000;
 }
 
 .side-social-links a {
-    color: #504f49;
-    opacity: 0.5;
+    color: #504f49 !important;
+    opacity: 0.8 !important;
     transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    display: block;
 }
 
 .side-social-links a svg {
     width: 24px;
     height: 24px;
     display: block;
-    stroke: currentColor;
-    stroke-width: 2;
+    stroke: #504f49 !important;
+    stroke-width: 2 !important;
     background: transparent;
 }
 
 .side-social-links a:hover {
-    opacity: 1;
+    opacity: 1 !important;
     transform: translateY(-4px);
-    color: #26251e;
+    color: #26251e !important;
+}
+
+.side-social-links a:hover svg {
+    stroke: #26251e !important;
 }
 
 .side-email {
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    color: #504f49;
-    opacity: 0.5;
+    color: #504f49 !important;
+    opacity: 0.8 !important;
     font-size: 13px;
     letter-spacing: 2.5px;
     transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease;
@@ -1974,9 +1992,9 @@ footer {
 }
 
 .side-email:hover {
-    opacity: 1;
+    opacity: 1 !important;
     transform: translateY(-4px);
-    color: #26251e;
+    color: #26251e !important;
 }
 
 /* Hide on mobile/tablets to prevent overlapping content */

@@ -318,7 +318,8 @@ img {
 }
 
 .hero-highlight {
-    color: #26251e;
+    color: inherit;
+    -webkit-text-fill-color: transparent;
     position: relative;
     display: inline-block;
 }
@@ -330,8 +331,8 @@ img {
     left: -4px;
     right: -4px;
     height: 6px;
-    background: linear-gradient(90deg, #39ff14, #00ffff);
-    box-shadow: 0 0 15px rgba(57, 255, 20, 0.5), 0 0 30px rgba(0, 255, 255, 0.4);
+    background: linear-gradient(90deg, #87929c, #d5dde6);
+    box-shadow: 0 0 15px rgba(135, 146, 156, 0.6), 0 0 30px rgba(213, 221, 230, 0.5);
     z-index: -1;
     border-radius: 4px;
     opacity: 0.8;

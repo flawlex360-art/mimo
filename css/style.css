@@ -2321,6 +2321,6 @@ footer {
     100% { transform: scale(1) rotate(0deg); }
 }
 
-.social-interactive.active {
+.social-interactive.active svg {
     animation: popAndWiggle 0.5s ease-in-out;
 }

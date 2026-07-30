@@ -5,6 +5,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const canHover = !isTouch;
     const allHeroes = document.querySelectorAll('.hero');
 
+    
+    // Social Interactive Icons
+    document.querySelectorAll('.social-interactive').forEach(icon => {
+        icon.addEventListener('click', function(e) {
+            e.preventDefault();
+            this.classList.remove('active');
+            void this.offsetWidth; // trigger reflow
+            this.classList.add('active');
+        });
+    });
+
     // ── Cursor Reveal Effect (Desktop & Mobile) ────────────────────
     allHeroes.forEach(hero => {
         const canvas = hero.querySelector('.hero-mask');

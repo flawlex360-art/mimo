@@ -2031,12 +2031,7 @@ footer {
     color: #26251e !important;
 }
 
-/* Hide on mobile/tablets to prevent overlapping content */
-@media (max-width: 1024px) {
-    .side-element {
-        display: none;
-    }
-}
+
 
 /* Responsive Design */
 
@@ -2279,4 +2274,39 @@ footer {
 
 .side-nav-icons a:hover svg.lucide-whatsapp, .side-nav-icons a:hover svg.lucide-x {
     fill: #26251e !important;
+}
+
+/* Adjust side elements for mobile */
+@media (max-width: 1024px) {
+    .side-element.left {
+        left: 20px;
+    }
+    .side-element.right {
+        right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .side-element.left {
+        left: 8px;
+    }
+    .side-element.right {
+        right: 8px;
+    }
+    .side-nav-icons {
+        gap: 0.8rem;
+    }
+    .side-nav-icons a svg {
+        width: 20px;
+        height: 20px;
+    }
+    .side-email {
+        font-size: 11px;
+        letter-spacing: 1.5px;
+    }
+    
+    /* Ensure container has enough padding to not overlap on very small screens */
+    .container {
+        padding: 0 2.5rem;
+    }
 }

@@ -2288,25 +2288,20 @@ footer {
 
 @media (max-width: 768px) {
     .side-element.left {
-        left: 8px;
+        left: 2px;
     }
     .side-element.right {
-        right: 8px;
+        right: 2px;
     }
     .side-nav-icons {
-        gap: 0.8rem;
+        gap: 0.6rem;
     }
     .side-nav-icons a svg {
-        width: 20px;
-        height: 20px;
+        width: 16px;
+        height: 16px;
     }
     .side-email {
-        font-size: 11px;
-        letter-spacing: 1.5px;
-    }
-    
-    /* Ensure container has enough padding to not overlap on very small screens */
-    .container {
-        padding: 0 2.5rem;
+        font-size: 9px;
+        letter-spacing: 1px;
     }
 }

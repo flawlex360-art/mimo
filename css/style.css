@@ -2278,19 +2278,19 @@ footer {
 
 /* Adjust side elements for mobile */
 @media (max-width: 1024px) {
-    .side-element.left {
+    .side-left {
         left: 20px;
     }
-    .side-element.right {
+    .side-right {
         right: 20px;
     }
 }
 
 @media (max-width: 768px) {
-    .side-element.left {
+    .side-left {
         left: 2px;
     }
-    .side-element.right {
+    .side-right {
         right: 2px;
     }
     .side-nav-icons {

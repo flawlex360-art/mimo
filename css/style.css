@@ -2305,3 +2305,10 @@ footer {
         letter-spacing: 1px;
     }
 }
+
+@media (max-width: 768px) {
+    .hero-highlight::after {
+        bottom: 0px;
+        height: 4px;
+    }
+}

@@ -1983,7 +1983,7 @@ footer {
 .side-nav-icons {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1rem;
     z-index: 10000;
 }
 
@@ -1995,8 +1995,8 @@ footer {
 }
 
 .side-nav-icons a svg {
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     display: block;
     stroke: #504f49 !important;
     stroke-width: 2 !important;
@@ -2018,7 +2018,7 @@ footer {
     text-orientation: mixed;
     color: #504f49 !important;
     opacity: 0.8 !important;
-    font-size: 13px;
+    font-size: 11px;
     letter-spacing: 2.5px;
     transition: opacity 0.3s ease, transform 0.3s ease, color 0.3s ease;
     text-decoration: none;
